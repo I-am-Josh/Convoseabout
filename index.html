@@ -1,14 +1,93 @@
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="main.css">
   <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SIAyL9fI8AI" frameborder="0" allowfullscreen></iframe>
+    <img src="profilepics/pc.png" class="pic" ID="pc"/></img>
+    <img src="profilepics/jw.png" class="pic" ID="jw"/></img>
+    <img src="profilepics/sl.png" class="pic" ID="sl"/></img>
+    <img src="profilepics/dz.png" class="pic" ID="dz"/></img>
+    <img src="profilepics/td.png" class="pic" ID="td"/></img>
+    <img src="profilepics/pb.png" class="pic" ID="pb"/></img>
+    <img src="profilepics/dw.png" class="pic" ID="dw"/></img>
+    <img src="profilepics/gb.png" class="pic" ID="gb"/></img>
+    <img src="profilepics/an.png" class="pic" ID="an"/></img>
+    <img src="profilepics/jj.png" class="pic" ID="jj"/></img>
+    <img src="profilepics/jl.png" class="pic" ID="jl"/></img>
+    <img src="profilepics/as.png" class="pic" ID="as"/></img>
+
+
+  <div class="page">
+    <div>
+      <p ID="intro">We are building</p>
+
+      <img src="otherpics/convose_logo.png" class="logo"></img>
+      <p ID="tagline">"Find beneficial people"</p>
+    <hr style="height:6px; visibility:hidden;" />
+    <div>
+    <nav>
+      <ul>
+        <li><a><img class="icons" src="otherpics/video.png" onclick="on()"></img></a></li>
+        <li><a href="https://docs.google.com/spreadsheets/d/1XqakIdGPVCcrwMYdeOxyDZ6KSxAhGNJNZaNSyANlIy4/edit#gid=1712041049"><img class="icons" src="otherpics/DES.png"></img></a></li>
+        <li><a href="mailto: joshuawhitaker44@gmail.com"><img class="icons" src="otherpics/mail.png"></img></a></li>
+      </ul>
+    </nav>
+  </div>
+
+<div ID="VO">
+  <div ID="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SIAyL9fI8AI" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div ID="overlay" onclick="off()"></div>
+</div>
+
+<script>
+function on() {
+    document.getElementById("VO").style.display = "inline-block";
+}
+
+function off() {
+    document.getElementById("VO").style.display = "none";
+}
+</script>
+
+
+<!-- JQUERY to make the images move.
+<script type="text/javascript">
+$(document).ready(function(){
+  animateDiv();
+
+});
+
+function makeNewPosition(){
+
+  // Get viewport dimensions (remove the dimension of the div)
+  var h = $(window).height() - 50;
+  var w = $(window).width() - 50;
+
+  var nh = Math.floor(Math.random() * h);
+  var nw = Math.floor(Math.random() * w);
+
+  return [nh,nw];
+
+}
+
+function animateDiv(){
+  var newq = makeNewPosition();
+  $('#pc').animate({ top: newq[0], left: newq[1] }, 30000, function(){
+    animateDiv();
+  });
+};
+</script>
+-->
+
+
 
 </body>
 
