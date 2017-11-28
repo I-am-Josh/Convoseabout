@@ -1,5 +1,6 @@
 <html>
 <head>
+  <link rel="shortcut icon" href="otherpics/favicon.ico" type="image/x-icon">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,52 +10,90 @@
 </head>
 
 <body>
-    <img src="profilepics/pc.png" class="pic" ID="pc"/></img>
-    <img src="profilepics/jw.png" class="pic" ID="jw"/></img>
-    <img src="profilepics/sl.png" class="pic" ID="sl"/></img>
-    <img src="profilepics/dz.png" class="pic" ID="dz"/></img>
-    <img src="profilepics/td.png" class="pic" ID="td"/></img>
-    <img src="profilepics/pb.png" class="pic" ID="pb"/></img>
-    <img src="profilepics/dw.png" class="pic" ID="dw"/></img>
-    <img src="profilepics/gb.png" class="pic" ID="gb"/></img>
-    <img src="profilepics/an.png" class="pic" ID="an"/></img>
-    <img src="profilepics/jj.png" class="pic" ID="jj"/></img>
-    <img src="profilepics/jl.png" class="pic" ID="jl"/></img>
-    <img src="profilepics/as.png" class="pic" ID="as"/></img>
+    <a href="https://www.linkedin.com/in/pengcheng-cui-83017a17/_blank" target="_blank">
+      <img src="profilepics/pc.png" class="pic" ID="pc"/></img>
+    </a>
+    <a href="https://i-am-josh.github.io/" target="_blank">
+      <img src="profilepics/jw.png" class="pic" ID="jw"/></img>
+    </a>
+    <a href="https://www.linkedin.com/in/sejin-lee-8535b2111/" target="_blank">
+      <img src="profilepics/sl.png" class="pic" ID="sl"/></img>
+    </a>
+    <a href="https://www.linkedin.com/in/danielzenker/" target="_blank">
+      <img src="profilepics/dz.png" class="pic" ID="dz"/></img>
+    </a>
+    <a href="http://iamthanh.com/" target="_blank">
+      <img src="profilepics/td.png" class="pic" ID="td"/></img>
+    </a>
+    <a href="https://www.linkedin.com/in/pepebecker/" target="_blank">
+      <img src="profilepics/pb.png" class="pic" ID="pb"/></img>
+    </a>
+    <a href="https://www.linkedin.com/in/dietmar-wilke-0662982b/" target="_blank">
+      <img src="profilepics/dw.png" class="pic" ID="dw"/></img>
+    </a>
+    <a href="https://www.linkedin.com/in/gburanov/" target="_blank">
+      <img src="profilepics/gb.png" class="pic" ID="gb"/></img>
+    </a>
+    <a href="https://www.linkedin.com/in/arsenianikolaeva/" target="_blank">
+      <img src="profilepics/an.png" class="pic" ID="an"/></img>
+    </a>
+    <a href="https://www.linkedin.com/in/jananevrlka/" target="_blank">
+      <img src="profilepics/jj.png" class="pic" ID="jj"/></img>
+    </a>
+    <a href="https://www.linkedin.com/in/hu-jialing-329619a4/" target="_blank">
+      <img src="profilepics/jl.png" class="pic" ID="jl"/></img>
+    </a>
+    <a href="https://www.behance.net/Akindo" target="_blank">
+      <img src="profilepics/as.png" class="pic" ID="as"/></img>
+    </a>
 
 
   <div class="page">
-    <div>
-      <p ID="intro">We are building</p>
 
-      <img src="otherpics/convose_logo.png" class="logo"></img>
-      <p ID="tagline">"Find beneficial people"</p>
+    <p ID="intro">We are building</p>
+    <img src="otherpics/convose_logo.png" class="logo"></img>
+    <p ID="tagline">"Find beneficial people"</p>
+
     <hr style="height:6px; visibility:hidden;" />
-    <div>
-    <nav>
-      <ul>
-        <li><a><img class="icons" src="otherpics/video.png" onclick="on()"></img></a></li>
-        <li><a href="https://docs.google.com/spreadsheets/d/1XqakIdGPVCcrwMYdeOxyDZ6KSxAhGNJNZaNSyANlIy4/edit#gid=1712041049"><img class="icons" src="otherpics/DES.png"></img></a></li>
-        <li><a href="mailto: joshuawhitaker44@gmail.com"><img class="icons" src="otherpics/mail.png"></img></a></li>
-      </ul>
-    </nav>
-  </div>
 
-<div ID="VO">
-  <div ID="video">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/SIAyL9fI8AI" frameborder="0" allowfullscreen></iframe>
+
+    <div>
+      <nav>
+        <ul>
+          <li><a id="play-video" href="#"><img class="icons" src="otherpics/video.png" onclick="on()"></img></a></li>
+          <li><a href="https://docs.google.com/spreadsheets/d/1XqakIdGPVCcrwMYdeOxyDZ6KSxAhGNJNZaNSyANlIy4/edit#gid=1712041049"><img class="icons" src="otherpics/DES.png"></img></a></li>
+          <li><a href="mailto: joshuawhitaker44@gmail.com"><img class="icons" src="otherpics/mail.png"></img></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div ID="VO">
+
+      <div ID="overlay" onclick="off()">
+        <div ID="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/SIAyL9fI8AI" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
   </div>
-  <div ID="overlay" onclick="off()"></div>
-</div>
 
 <script>
 function on() {
-    document.getElementById("VO").style.display = "inline-block";
+    document.getElementById("VO").style.display = "block";
 }
 
 function off() {
     document.getElementById("VO").style.display = "none";
 }
+
+$(document).ready(function() {
+    $('#play-video').on('click', function(ev) {
+
+        $("#video")[0].src += "&autoplay=1";
+        ev.preventDefault();
+
+    });
+});
 </script>
 
 
